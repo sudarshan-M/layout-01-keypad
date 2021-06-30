@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            margin: 0px;
+        }
+
+        .keypad {
+            background-color: rgb(60, 60, 60);
+            width: 100%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            bottom: 0px;
+            position: fixed;
+        }
+
+        .wrapper {
+            width: 80%;
+            background-color:rgb(60, 60, 60);
+            margin: 0 auto;
+        }
+
+        .keypad table { 
+            width: 100%;
+            background-color:rgb(60, 60, 60);
+            text-align: center;
+        }
+
+        .keypad table td {
+            padding: 40px;
+            cursor: pointer;
+            transition: all .3s ease-in;
+        }
+
+        .keypad table td:hover { 
+            background-color: rgb(44, 43, 43);
+        }
+
+        .keypad table td:active {
+            background-color: rgb(80, 78, 78);
+        }
+
+        .keypad table td p {
+            margin: 0px;
+            font-size: 15px;
+            color: grey;
+        }
+
+        .keypad table td span {
+            font-size: 30px;
+        }
+
+        .keypad .buttons {
+            display: flex;
+            justify-content: space-between;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .keypad .buttons button {
+            cursor: pointer;
+            padding: 12px 30px;
+            border: none;
+        }
+
+        .keypad .buttons button:hover {
+            opacity: .9;
+        }
+
+        .keypad .buttons .icon {
+            background-color: transparent;
+            border: none;
+            color:grey
+        }
+
+        .keypad .buttons .icon:hover {
+            color: rgb(83, 84, 85);
+        }
+
+        .keypad .buttons .icon:active {
+            color: rgb(35, 35, 36);
+        }
+
+        .keypad .buttons .btns {
+            display: flex;
+        }
+
+        .keypad .buttons .btns  button {
+            background-color: rgb(1, 203, 31);;
+            border: none;
+            color: white;
+        }
+
+        .keypad .buttons .btns button:first-child {
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            margin-right: 1px;
+        }
+        .keypad .buttons .btns button:last-child {
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+
+        .keypad .buttons .btns button:active {
+            opacity: .3;
+        }
+
+        .keypad .buttons .btns button i {
+           margin-right: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="keypad">
+        <div class="wrapper">
+            <table>
+                <tr>
+                    <td><span>1</span><p>-</p></td>
+                    <td><span>2</span><p>ABC</p></td>
+                    <td><span>3</span><p>DEF</p></td>
+                </tr>
+                <tr>
+                    <td><span>4</span><p>GHI</p></td>
+                    <td><span>5</span><p>JKL</p></td>
+                    <td><span>6</span><p>MNO</p></td>
+                </tr>
+                <tr>
+                    <td><span>7</span><p>PQRS</p></td>
+                    <td><span>8</span><p>TUV</p></td>
+                    <td><span>9</span><p>WXYZ</p></td>
+                </tr>
+                <tr>
+                    <td><span>*</span><p>,</p></td>
+                    <td><span>0</span><p>+</p></td>
+                    <td><span>#</span><p>.</p></td>
+                </tr>
+            </table>
+            <div class="buttons">
+                <button class="icon"><i class="fas fa-bars"></i></button>
+                <div class="btns">
+                    <button><i class="fas fa-phone-alt"></i>idea</button>
+                    <button><i class="fas fa-phone-alt"></i>airtel</button>
+                </div>
+                <button class="icon"><i class="fas fa-th"></i></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
