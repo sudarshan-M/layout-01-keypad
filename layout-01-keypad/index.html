@@ -20,6 +20,7 @@
             border-top-right-radius: 20px;
             bottom: 0px;
             position: fixed;
+            padding-bottom: 20px;
         }
 
         .wrapper {
@@ -117,6 +118,24 @@
            margin-right: 5px;
         }
 
+        @media screen and (max-width: 600px) {
+            .wrapper {
+                width: 90%;
+            }
+
+            .keypad table td {
+                padding: 20px;
+            }  
+
+            .keypad .buttons {
+                max-width: auto;
+                justify-content: space-evenly;
+            }
+
+            .keypad .buttons .icon {
+                padding: 12px 0px;
+            }
+        }
     </style>
 </head>
 <body>
